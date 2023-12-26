@@ -9,8 +9,11 @@ function App() {
     'Chennai',
     'Pune'
   ];
+  const handleSelectItems = (item: string) => {
+    console.log(item)
+  }
   return <div>
-    <ListGroup items={cities} heading="List Of Cities" />
+    <ListGroup items={cities} heading="List Of Cities" onSelectItem={handleSelectItems} />
   </div>
 }
 
